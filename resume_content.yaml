@@ -1,0 +1,36 @@
+education:
+- degree: BACHELOR OF SCIENCE, COMPUTER SCIENCE
+  institution: University of California, Irvine
+experience:
+- achievements:
+  - Worked on great things at TestCompany2
+  company: TestCompany2
+  duration: July 2021 - present
+  location: Mountain View
+  position: SENIOR SOFTWARE ENGINEER
+- achievements:
+  - Worked on great things at TestCompany3
+  company: TestCompany3
+  duration: Jan 2019 - July 2021
+  location: San Jose
+  position: BACKEND ENGINEER
+personal_info:
+  contact:
+    citizenship: U.S. Citizen
+    email: johnsmith@gmail.com
+    github: JohnSmith
+    gitlab: JohnSmith
+    phone: 408-100-0043
+    twitter: johnsmithc6
+  first_name: John
+  last_name: Smith
+summary: Senior Software Engineer with 10+ years of experience designing, scaling,
+  and deploying high-impact applications. Proven ability to lead large-scale projects,
+  optimizing for performance and security in high-traffic environments.
+technologies:
+  backend: Python, NodeJS, Golang, Java, Nginx, Redis
+  databases: Postgres, MongoDB, DynamoDB, SQL, NoSQL
+  devops: AWS, Terraform, Git, Docker, Kubernetes, Ansible, CI/CD, Spinnaker, Jenkins,
+    Datadog
+  frontend: Javascript, React, HTML, CSS, NodeJS
+  soft_skills: Cross-functional Collaboration, Mentorship, Problem Solving
