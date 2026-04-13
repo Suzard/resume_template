@@ -53,6 +53,52 @@ http://localhost:5001
 http://localhost:5001/download-pdf
 ```
 
+## Customize Resume API
+
+# Resume Customization API
+
+## Endpoint
+
+**POST** `http://localhost:5001/download-resume-custom`
+
+---
+## Request Body
+
+Send a JSON payload with the following fields:
+
+```json
+{
+  "job_description": "Full job description text here",
+  "company": "Company Name"
+}
+```
+## Description
+
+Generates a customized resume based on a job description.
+
+- Parses the job description to extract relevant keywords
+- Uses the company name for file naming and tracking
+- Returns a downloadable customized resume
+
+This endpoint is designed to work well with browser extensions that extract job descriptions and company names from job postings.
+
+---
+
+
+
+Use the following `curl` command to generate a customized resume based on a job description. Pairs well with the extension that grabs company name and keywords from a job description by highlighting.
+### Example Request
+
+```bash
+curl -X POST "http://localhost:5001/download-resume-custom" \
+  -H "Content-Type: application/json" \
+  -H "Accept: */*" \
+  -d '{
+    "job_description": "Software Engineer role focusing on backend systems, distributed systems, and AWS.",
+    "company": "Google"
+  }'
+
+
 ## Customizing the Resume
 
 The resume template is located in `templates/resume.html`. You can modify this file to customize your resume's content and styling. The template includes:
