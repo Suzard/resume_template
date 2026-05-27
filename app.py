@@ -194,7 +194,14 @@ def generatepdf():
 
 # Flask app (kept for web interface if needed)
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+CORS(
+    app,
+    resources={r"/*": {"origins": "*"}},
+    methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization"],
+    expose_headers=["Content-Disposition"],
+    supports_credentials=False,
+)
 
 @app.route('/')
 def index():

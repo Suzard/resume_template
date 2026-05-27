@@ -3,34 +3,50 @@ education:
   institution: University of California, Irvine
 experience:
 - achievements:
-  - Worked on great things at TestCompany2
-  company: TestCompany2
+  - Developed an Energy Monitoring Dashboard using React and Go, enabling real-time
+    tracking of device power consumption and driving 12% average energy savings per
+    household across our 30 million users.
+  - Led high-severity SEV-1/SEV-2 incident responses for the Samsung TV Plus content
+    delivery platform, quickly diagonosed a Redis cache key regression that reduced
+    cache hit rate by 35% and caused a 20% increase in downstream query load.  Coordinated
+    rollback and recovery, restoring latency to baseline and reducing API error rates
+    by 23%
+  - Spearheaded the design and implementation of a new search and homepage personalization
+    service using Golang, Valkey (Elasticache), and OpenSearch (Elasticsearch), improving search relevance and user
+    engagement by 18% while reducing latency by 30% under high-concurrency workloads.
+  - Reduced sustained database pressure on Aurora MySQL (RDS) by redesigning our metadata
+    Golang ingest-engine access patterns, eliminating redundant read paths and cutting
+    peak query volume by 27%, improving P99 query latency by 25% under high-concurrency
+    workloads.
+  company: Samsung formerly SmartThings
   duration: July 2021 - present
   location: Mountain View
   position: SENIOR SOFTWARE ENGINEER
 - achievements:
-  - Worked on great things at TestCompany3
-  company: TestCompany3
+  - Led a 3-engineer team in building high-performance REST APIs using JavaScript, Java, 
+    and Elasticsearch for real-time candidate search in TextRecruit, increasing recruiter engagement by 38%.
+  - Developed high-performance REST APIs using JavaScript, Elasticsearch, and Java to power hundreds of TextRecruits to search for thousands 
+    of candidates, increasing recruiter engagement by 38% and streamlining hiring workflows.
+  company: iCIMS
   duration: Jan 2019 - July 2021
   location: San Jose
   position: BACKEND ENGINEER
 personal_info:
   contact:
     citizenship: U.S. Citizen
-    email: johnsmith@gmail.com
-    github: JohnSmith
-    gitlab: JohnSmith
-    phone: 408-100-0043
-    twitter: johnsmithc6
-  first_name: John
-  last_name: Smith
-summary: Senior Software Engineer with 10+ years of experience designing, scaling,
-  and deploying high-impact applications. Proven ability to lead large-scale projects,
-  optimizing for performance and security in high-traffic environments.
+    email: iedwardchen@gmail.com
+    github: Suzard
+    gitlab: Suzard
+    phone: 408-256-0043
+    twitter: edchenc6
+  first_name: Edward
+  last_name: Chen
+summary: Senior Software Engineer with 6+ years of experience building scalable distributed systems and high-throughput APIs. 
+  Experienced in AWS, Kubernetes, Redis, Golang, and Java, with a strong focus on reliability, performance, and infrastructure scalability.
 technologies:
   backend: Python, NodeJS, Golang, Java, Nginx, Redis
   databases: Postgres, MongoDB, DynamoDB, SQL, NoSQL
   devops: AWS, Terraform, Git, Docker, Kubernetes, Ansible, CI/CD, Spinnaker, Jenkins,
-    Datadog
+    Datadog, Linux, OpenTelemetry
   frontend: Javascript, React, HTML, CSS, NodeJS
   soft_skills: Cross-functional Collaboration, Mentorship, Problem Solving
