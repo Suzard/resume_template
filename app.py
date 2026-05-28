@@ -49,7 +49,7 @@ def create_resume():
     heading_style = ParagraphStyle(
         'CustomHeading',
         parent=styles['Heading2'],
-        fontSize=12,
+        fontSize=15,
         spaceBefore=8,
         spaceAfter=3,
         textColor=colors.black,
@@ -59,14 +59,14 @@ def create_resume():
     normal_style = ParagraphStyle(
         'CustomNormal',
         parent=styles['Normal'],
-        fontSize=8.5,
+        fontSize=11,
         spaceAfter=1
     )
 
     contact_style = ParagraphStyle(
         'ContactStyle',
         parent=styles['Normal'],
-        fontSize=8.5,
+        fontSize=9.5,
         spaceAfter=12,  # Increased space after contact info
         alignment=1  # Center alignment
     )
@@ -74,7 +74,7 @@ def create_resume():
     position_style = ParagraphStyle(
         'PositionStyle',
         parent=styles['Normal'],
-        fontSize=9,
+        fontSize=10,
         fontName='Helvetica-Bold',
         spaceAfter=1
     )
@@ -82,7 +82,7 @@ def create_resume():
     company_style = ParagraphStyle(
         'CompanyStyle',
         parent=styles['Normal'],
-        fontSize=9,
+        fontSize=10,
         fontName='Helvetica-Bold',
         spaceAfter=1
     )
@@ -275,7 +275,6 @@ def parse_job_description_keywords(text_blob):
         'sql': 'SQL',
         'nosql': 'NoSQL',
         'aws': 'AWS',
-        'azure': 'Azure',
         'gcp': 'GCP',
         'api': 'API',
         'rest': 'REST',
@@ -386,7 +385,7 @@ def parse_job_description_keywords(text_blob):
         'ansible', 'puppet', 'chef', 'saltstack',
         # CI/CD
         'jenkins', 'gitlab ci', 'github actions', 'circleci', 'travis ci', 'bamboo',
-        'teamcity', 'azure devops', 'spinnaker', 'argo cd', 'flux',
+        'teamcity', 'spinnaker', 'argo cd', 'flux',
         'ci/cd', 'cicd', 'continuous integration', 'continuous deployment',
         # Monitoring & observability
         'prometheus', 'grafana', 'datadog', 'newrelic', 'splunk', 'elk', 'elastic stack',
@@ -514,7 +513,7 @@ def merge_skills_no_duplicates(existing_skills, new_skills, all_technologies_tex
         'rabbitmq': 'RabbitMQ', 'graphql': 'GraphQL', 'grpc': 'gRPC',
         'websocket': 'WebSocket', 'html': 'HTML', 'css': 'CSS', 'sass': 'SASS',
         'scss': 'SCSS', 'sql': 'SQL', 'nosql': 'NoSQL', 'aws': 'AWS',
-        'azure': 'Azure', 'gcp': 'GCP', 'api': 'API', 'rest': 'REST',
+        'gcp': 'GCP', 'api': 'API', 'rest': 'REST',
         'git': 'Git', 'ci/cd': 'CI/CD', 'devops': 'DevOps', 'orm': 'ORM',
         'spa': 'SPA', 'pwa': 'PWA', 'dom': 'DOM', 'prometheus': 'Prometheus',
         'grafana': 'Grafana', 'datadog': 'Datadog'
